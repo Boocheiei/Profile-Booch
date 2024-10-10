@@ -1,0 +1,46 @@
+.grid-main{
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: auto;
+}
+.grid-main-item1 {
+  background-color: #1e293b;
+}
+
+.grid-main-item1 h1 {
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  text-transform: uppercase;
+}
+
+
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+.header {
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #f35626;
+  background-image: linear-gradient(92deg, #f35626, #feab3a); 
+  background-clip: text; 
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  animation: hue 10s infinite linear;
+  -webkit-animation: hue 10s infinite linear;
+}
+
+@keyframes hue { /* Standard rule */
+  from {
+    filter: hue-rotate(0deg); 
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(-360deg); 
+    -webkit-filter: hue-rotate(-360deg); 
+  }
+}

@@ -1,0 +1,108 @@
+
+.main{
+    background: #9c68f1;
+    height: 20vh;
+    width: 100%;
+    animation: main-background infinite 15s;
+    position: relative;
+    overflow: hidden;
+    animation-play-state: running;
+  
+  }
+  .sun{
+    height: 100px;
+    width: 100px;
+    background: #eee444;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -20%;
+    left: -20%;
+    animation: sun-animation infinite 15s;
+    
+  }
+  .clouds{
+    position: absolute;
+    height: 40px;
+    width: 60px;
+    background: #fff;
+    border-radius: 50%;
+    top: 50px;
+    left: 50px;
+    
+    &:after, &:before{
+      content:'';
+      position: absolute;
+      right: -10px;
+      height: 20px;
+      width: 40px;
+      border-radius: 50%;
+      background: #fff;
+    }
+    &:after{
+      right: auto;
+      left: -10px;
+      bottom: 0;
+    }
+  }
+  .cloud1{
+    animation: cloud-animation infinite 15s;
+    animation-play-state: running;
+    &:hover{
+      animation-play-state: paused;
+    }
+  }
+  .cloud2{
+    animation: cloud-animation infinite 18s;
+    top: 100px;
+    transform: scale(1.5);
+    animation-play-state: running;
+    &:hover{
+      animation-play-state: paused;
+    }
+  }
+  .cloud3{
+    animation: cloud-animation infinite 20s;
+    top: 150px;
+    transform: scale(1.8);
+    animation-play-state: running;
+    &:hover{
+      animation-play-state: paused;
+    }
+  }
+  
+  @keyframes main-background{
+    0% {
+      background: #000;
+    }
+    50% {
+      background: #3E8EDE;
+    }
+    100% {
+      background: #0f0f0f;
+    }
+  }
+  @keyframes cloud-animation{
+    0%{
+      left: -10%;
+    }
+    100%{
+      left: 110%;
+    }
+  }
+  @keyframes sun-animation{
+    0%{
+      left: -20%;
+      bottom: -20%;
+      background: #ffb400;
+    }
+    50%{
+      bottom: 85%;
+      left: 50%;
+      background: #eee444;
+    }
+    100%{
+      bottom: -20%;
+      left: 120%;
+      background: #ffb400;
+    }
+  }
