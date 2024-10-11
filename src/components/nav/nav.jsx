@@ -3,9 +3,12 @@ import logo from '../../logo.svg';
 import '../../App.css';
 import React from 'react';
 import TextScrambleComponent from './hello';
+import Topnav from './topnav';
 
 function Nav() {
     return (
+        <div>
+            <Topnav/>
         <div className="grid-nav">
             <div className='name'>
                 <p>
@@ -25,6 +28,7 @@ function Nav() {
                     <a href="#"><i className="fa fa-fw fa-user"></i> Login</a>
                 </div>
             </div>
+        </div>
         </div>
     );
 }
