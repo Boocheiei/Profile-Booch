@@ -35,7 +35,7 @@ const MatrixRain = () => {
     <div className='concloud'>
     <div className="containerc">
       <div className="cloud">
-        <h2>Coding.........</h2>
+        <h2>Coding . . .</h2>
       </div>
     </div>
     </div>

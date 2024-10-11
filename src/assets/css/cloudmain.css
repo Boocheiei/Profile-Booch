@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 .concloud {
  display: flex;
  padding: -1000px;
@@ -62,20 +61,20 @@
   top: -115px;
   left: 50%;
   transform: translateX(-50%);
-  border-radius: 100px;
-  width: 120%;
-  height: 90px;
+  border-radius: 500px;
+  width: 150%;
+  height: 100px;
   background: var(--clr);
 }
 
 .cloud h2::after {
   content: '';
   position: absolute;
-  top: -150px;
-  left: 25px;
+  top: -160px;
+  left: 10px;
   width: 150px;
-  height: 100px;
-  border-radius: 50%;
+  height: 90px;
+  border-radius: 60%;
   background: var(--clr);
   box-shadow: 120px -30px 0 10px var(--clr);
 }

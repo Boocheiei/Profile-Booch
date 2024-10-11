@@ -64,7 +64,7 @@ class TextScramble {
 
 const phrases = [
   'Booch,',
-  'Veerapat',
+  'Veerapat Aiamlaaong',
   'Fullstack Developer',
   'Programmer'
 ];

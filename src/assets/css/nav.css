@@ -1,22 +1,52 @@
+
 .grid-nav{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
     background-color: #0F172A;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
+    height: 80px;
 }
-.grid-nav-meun{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    font-size: 10px;
-    text-align: center;
-    align-items: center;
+.nav-meun{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    font-size: 50px;
     color: #f8fafc;
+
 }
+.nav{
+    height: 100%;
+}
+.navbar {
+  
+    overflow: auto;
+  }
+  .navbar a {
+    margin-top: 15px;
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    
+  }
+ 
+  .navbar a:hover {
+    color: #000;
+  }
+  
 .nav-logo{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -25px;
 }
 .nav-logo img{
     width: 80px;

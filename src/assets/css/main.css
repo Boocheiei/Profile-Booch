@@ -2,29 +2,40 @@
 display: grid;
 grid-template-columns: 1fr 1fr;
 grid-template-rows: auto;
+height: 80vh;
 }
 .grid-main-item1 {
   background-color: #1e293b;
+
 }
 
 .grid-main-item1 h1 {
+
   text-align: center;
-  font-size: 35px;
+  font-size: 30px;
   color: white;
-  text-transform: uppercase;
+}
+.grid-profile{
+  display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: auto;
 }
 
-
-
+.icondev{
+  text-align: center;
+  padding: 10px;
+}
 @keyframes caret {
   50% {
     border-color: transparent;
   }
 }
 .header {
+  font-size: 15px;
   font-weight: 100;
   letter-spacing: 2px;
-  text-align: center;
+  text-indent: 2em;
+
   color: #f35626;
   background-image: linear-gradient(92deg, #f35626, #feab3a); 
   background-clip: text; 
